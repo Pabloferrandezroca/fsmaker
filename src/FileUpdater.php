@@ -209,6 +209,7 @@ final class FileUpdater
             $fileStr = str_replace('use FacturaScripts\Core\Base\AjaxForms\AccountingHeaderHTML;', 'use FacturaScripts\Core\Lib\AjaxForms\AccountingHeaderHTML;', $fileStr);
             $fileStr = str_replace('use FacturaScripts\Core\Base\AjaxForms\AccountingLineHTML;', 'use FacturaScripts\Core\Lib\AjaxForms\AccountingLineHTML;', $fileStr);
             $fileStr = str_replace('use FacturaScripts\Core\Base\AjaxForms\AccountingModalHTML;', 'use FacturaScripts\Core\Lib\AjaxForms\AccountingModalHTML;', $fileStr);
+            $fileStr = str_replace('FacturaScripts/Core/Base/InitClass', 'FacturaScripts/Core/Template/InitClass', $fileStr);
 
             // reemplazamos modelos
             $fileStr = str_replace('use FacturaScripts\Core\Model\Base\ModelClass;', 'use FacturaScripts\Core\Template\ModelClass;', $fileStr);
